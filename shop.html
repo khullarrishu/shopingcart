@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>ShoppingWorld.com</title>
+	<link rel="icon" href="2772.png">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style type="text/css">
+
+*{
+	box-sizing: border-box;
+}
+.clearfix:before{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	content: "";
+	clear:both;
+	display: table;
+}
+
+/*-------------------------------
+			Main CSS
+-------------------------------*/
+body{
+	font-family: "open sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 700;
+}
+.wrapper{
+	width:1440px;
+	max-width:90%;
+	margin: 0 auto;
+}
+
+/*-------------------------------
+	CSS for Menu Header
+-------------------------------*/
+header{
+	background-color: #FCBA12;
+}
+.logo{
+	float: left;
+}
+.menu{
+	float: right;
+	font-size: 15px;
+	padding-top: 20px;
+}
+.menu a{
+	text-decoration: none;
+	color:#000;
+	margin-left: 20px;
+}
+.menu a:hover{
+	color:#FF0000;
+}
+
+.row{
+	width:100%;
+}
+
+/*------------------------------------
+	banner section
+	------------------------------*/
+
+	#banner{
+		background-color:#FDED2A ;
+		width:100%;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	#banner-wrapper{
+		width: 900px;
+		max-width: 90%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items:  center;
+
+	}
+
+
+.poster {
+    text-align: center;
+    background-color: #ffffff;
+    min-height: 350px;
+}
+
+#boots{
+	width:275px;
+	float:right;
+}
+.desc{
+
+	padding: 20px;
+}
+
+/*---------------------------------
+		Footer css
+	/*----------------------------------*/
+	footer {
+		background-color:#2E3409;
+		text-align:center;
+		padding-top:20px;
+		padding-bottom:10px;
+	}
+
+	/* CSS for Terms & Conditions + Privacy Link*/
+	.footer-link {
+		color:#ccc;
+		text-decoration:none;
+		font-size:20px;
+		margin-left:20px;
+	}
+
+	/* copyright */
+	.copyright {
+		color:white;
+	}
+
+.video1{
+	float: right;
+}
+
+</style>
+
+<script>
+function onShirtAddCartClicked() {
+	console.log ("here");
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.shirtCount) {
+            localStorage.shirtCount = Number(localStorage.shirtCount)+1;
+        } else {
+            localStorage.shirtCount = 1;
+        }
+    }
+}
+
+function onShoeAddCartClicked() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.shoeCount) {
+            localStorage.shoeCount = Number(localStorage.shoeCount)+1;
+        } else {
+            localStorage.shoeCount = 1;
+        }
+        
+    }
+}
+</script>
+
+
+
+
+</head>
+<body>
+
+<header id="top" class="clearfix">
+	<div class="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2 class="logo">Shopping<img src="111.png" style="width:40px; height:40px;">World.com</h2>
+						<div class="menu">
+				<a href="shopcart.html" class=""><img src="2772.png" style="width:20px;height: 20px;">Your Cart</a>
+				<a href="Shop.html" class="">Home</a>
+				<a href="" class="">Contact Us</a>
+			</div> <!--// menu -->
+
+		</div> <!--//col-sm-12-->
+	</div> <!--row-->
+</div> <!--//Container-->
+</div> <!--//wrapper-->
+</header>
+
+
+
+
+
+
+<section id="banner" class="clearfix">
+		<div class="banner-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+			<div class="poster">
+				<img src="114.jpg" style="width:250px"></img>
+			</div> <!--poster-->
+
+
+			<div class="desc">
+				<h4>Product Name: Jeans Shirt</h4>
+				<h4>Description: Cotton Denim Shirt for men</h4>
+				<h4>Price:$1000</h4>
+				<a href=""><button onclick="onShirtAddCartClicked()" type="button" class="btn btn-success">Add to Cart</button></a>
+			</div> <!--//desc-->
+		</div>
+					<div class="col-sm-6">
+			<div class="poster">
+				<img src="115.jpg" style="width:250px"></img>
+			</div> <!--poster-->
+
+			<div class="desc">
+				<h4>Product Name: Timberland Boots</h4>
+				<h4>Description: Perfect Boots in winter snowy season</h4>
+				<h4>Price:$2000</h4>
+				<a href=""><button onclick="onShoeAddCartClicked()" type="button" class="btn btn-success">Add to Cart</button></a>
+			</div> <!--//desc-->
+			</div> <!--col-sm-->
+		</div> <!--row-->
+			</div> <!--//container-->
+		</div> <!--banner-wrapper-->
+
+
+	</section> <!--// banner -->
+
+
+<footer>
+	<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+    	<a href="" class="footer-link"> Terms and Conditions </a>
+		<a href="" class="footer-link"> Privacy Policy </a>
+		<p class="copyright"> &copy; 2018 ShoppingWorld.com</p>
+		</div> <!--col-sm-->
+		</div> <!--row-->
+			</div> <!--//container-->
+    </footer>
+
+</body>
+</html>

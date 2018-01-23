@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your Cart</title>
+	<link rel="icon" href="2772.png">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style type="text/css">
+
+    	*{
+	box-sizing: border-box;
+}
+.clearfix:before{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	content: "";
+	clear:both;
+	display: table;
+}
+
+/*-------------------------------
+			Main CSS
+-------------------------------*/
+body{
+	font-family: "open sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 700;
+}
+.wrapper{
+	width:1440px;
+	max-width:90%;
+	margin: 0 auto;
+}
+
+/*-------------------------------
+	CSS for Menu Header
+-------------------------------*/
+header{
+	background-color: #FCBA12;
+}
+.logo{
+	float: left;
+}
+.menu{
+	float: right;
+	font-size: 15px;
+	padding-top: 20px;
+}
+.menu a{
+	text-decoration: none;
+	color:#000;
+	margin-left: 20px;
+}
+.menu a:hover{
+	color:#FF0000;
+}
+.row{
+		width:100%;
+	}
+
+.banner{
+		background-color:#FDED2A ;
+		width:100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	#banner-wrapper{
+		width: 900px;
+		max-width: 90%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+	#poster{
+		width: 250px;
+		float: left;
+
+	}
+
+#boots{
+	width:275px;
+	float:right;
+}
+#desc{
+	float: left;
+	margin-left: 20px;
+}
+	/*---------------------------------
+		Newsletter css
+	----------------------------------*/
+
+	/* section = newsletter */
+	#newsletter {
+		background-color:#CBE432;
+		padding-top:80px;
+		padding-bottom:80px;
+		text-align:center;
+	}
+
+	/* first <div> inside the newsletter section */
+	.newsletter-wrapper {
+		margin:0 auto;
+	}
+
+	/* The <h2> inside the newsletter section */
+	.newsletter-header {
+		font-size:28px;
+		color:white;
+	}
+
+	/* CSS for the form <inputs> */
+	.inputbox {
+		width:48%;
+		margin: 0 0.5%;
+		margin-bottom: 5px;
+		height:50px;
+		border:none;
+		outline:none;
+		border-radius: 3.8px;
+		color:white;
+		padding:7px 19px;
+		font-size:12px;
+		background-color:#404043;
+	}
+
+	/* CSS for button */
+	button, input[type="submit"] {
+		border:none;
+		outline:none;
+		padding:15px 55px;
+		border-radius:28px;		/* make button round */
+		color: white;
+		font-weight:700;
+		font-size:14px;
+		background:#2EC486;
+		margin-top:20px;
+	}
+
+/*---------------------------------
+		Footer css
+	/*----------------------------------*/
+	footer {
+		background-color:#2E3409;
+		text-align:center;
+		padding-top:20px;
+		padding-bottom:10px;
+	}
+
+	/* CSS for Terms & Conditions + Privacy Link*/
+	.footer-link {
+		color:#ccc;
+		text-decoration:none;
+		font-size:20px;
+		margin-left:20px;
+	}
+
+	/* copyright */
+	.copyright {
+		color:white;
+	}
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+	<header id="top" class="clearfix">
+		<div class="wrapper">
+			<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+			<h2 class="logo">Shopping<img src="111.png" style="width:40px; height:40px;">World.com</h2>
+			<div class="menu">
+				
+				<a href="Shop.html" class="">Home</a>
+				<a href="" class="">Contact Us</a>
+			</div> <!--// menu -->
+			</div> <!--//col-sm-12-->
+	</div> <!--row-->
+</div> <!--//Container-->
+		</div> <!--// wrapper -->
+	</header> <!--// header -->
+
+
+	<section id="product1" class="banner clearfix">
+		<div class="banner-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+			<div id="poster">
+				<img src="114.jpg" style="width:250px"></img>
+			</div> <!--poster-->
+
+			<div id="desc">
+				<h4>Product Name: Jeans Shirt</h4>
+				<h4>Description: Cotton Denim Shirt for men</h4>
+				<h4>Price:$<span id="shirtPrice">1000</span></h4>
+				<button onclick="onShirtCounterMinus()" type="button" class="btn btn-success">-</button>
+				<label id="shirtCounter"></label>
+				<button onclick="onShirtCounterAdd()" type="button" class="btn btn-success">+</button>
+			</div> <!--//desc-->
+</div> <!--col-sm-->
+		</div> <!--row-->
+			</div> <!--//container-->
+		</div> <!--banner-wrapper-->
+
+
+	</section> <!--// banner -->
+
+
+	<section id="product2" class="banner clearfix">
+		<div class="banner-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+			<div id="poster">
+				<img src="115.jpg" style="width:250px"></img>
+			</div> <!--poster-->
+
+			<div id="desc">
+				<h4>Product Name: Timberland Boots</h4>
+				<h4>Description: Perfect Boots in winter snowy season</h4>
+				<h4>Price:$<span id="bootPrice">2000</span></h4>
+				<button onclick="onShoeCounterMinus()" type="button" class="btn btn-success">-</button>
+				<label id="shoeCounter"></label>
+				<button onclick="onShoeCounterAdd()" type="button" class="btn btn-success">+</button>
+			</div> <!--//desc-->
+			</div> <!--col-sm-->
+		</div> <!--row-->
+			</div> <!--//container-->
+		</div> <!--banner-wrapper-->
+
+
+	</section> <!--// banner -->
+<section id="totalDiv">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<p>Sub Total: $<span id="subTotal"></span></p>
+				<p>Tax: $<span id="tax">0</span></p>
+				<p>Total: $<span id="totalPrice"></span></p>
+			</div>
+		</div>
+	</div>
+</section>
+	<section id="newsletter">
+		<div class="newsletter-wrapper">
+				<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+
+				<form id="details" type="post">
+					<input id="name" type="text" placeholder="Your name" class="inputbox" required><br>
+					<input id="email" type="email" placeholder="Email" class="inputbox" required><br>
+					<input id="phonenum" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Phone Number (324-234-2344)" class="inputbox" required><br>
+					<p id="status"></p>
+					<input type="submit" value="SUBMIT">
+				</form>
+
+			</div> <!--col-sm-->
+		</div> <!--row-->
+			</div> <!--//container-->
+		</div> <!--//newletter-wrapper-->
+    </section> <!--//newsletter-->
+
+    <footer>
+    	<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+
+    	<a href="" class="footer-link"> Terms and Conditions </a>
+		<a href="" class="footer-link"> Privacy Policy </a>
+		<p class="copyright"> &copy; 2018 ShoppingWorld.com</p>
+		</div> <!--col-sm-->
+		</div> <!--row-->
+			</div> <!--//container-->
+
+    </footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	s
+	<script type="text/javascript">
+		(function(){
+		  emailjs.init("user_cY4zuWZ6NLAaJRGPhvikY");
+		})();
+		document.getElementById("shoeCounter").innerHTML = localStorage.shoeCount;
+		document.getElementById("shirtCounter").innerHTML = localStorage.shirtCount;
+	
+// console.log(localStorage);
+
+
+		$("document").ready(function(){
+			priceUpdate();
+			if(Number(localStorage.shoeCount) < 1 ){
+			// hide shoe div
+				$("#product2").hide(); 	
+			}
+
+			if(Number(localStorage.shirtCount) < 1 ){
+				// hide shirt div	
+				$("#product1").hide(); 
+			}
+
+			if(Number(localStorage.shoeCount) < 1 && Number(localStorage.shirtCount) < 1){
+				$("#product1").hide();     
+				$("#product2").hide();     
+				$("#totalDiv").hide();     
+			}
+		})
+		function priceUpdate(){
+			var shirtPrice=$("#shirtPrice").text();
+			var shirtQuant=$("#shirtCounter").text();
+			var bootPrice=$("#bootPrice").text();
+			var bootQuant=$("#shoeCounter").text();
+			var totalShirtPrice=shirtQuant*shirtPrice;
+			var totalBootPrice=bootQuant*bootPrice;
+			var subtotal= totalBootPrice+totalShirtPrice;
+			var tax= $("#tax").text();
+			$("#subTotal").text(subtotal);
+			$("#totalPrice").text(subtotal);
+			
+		}
+		$("#details").on("submit",function(e){
+			
+	
+			e.preventDefault();
+			var oderId = Math.floor(1000 + Math.random() * 9000);
+			$("#status").text("sending.....");
+			//console.log($("#name").val());
+			var template_params = {
+			message_html: "Your order is placed <br> Order ID: "+oderId
+			};
+			emailjs.send("default_service","template_IZJuazPs", template_params).then(
+			  function(response) {
+			    alert("Mail Sent");
+			    $("#status").text("");
+			    $("#name").val("");
+			    $("#email").val("");
+			    $("#phonenum").val("");
+			    console.log("SUCCESS", response);
+			    localStorage.shoeCount=0;
+			    localStorage.shirtCount=0;
+			    location.reload();
+			  }, 
+			  function(error) {
+			    alert("FAILED");
+			    console.log("FAILED", error);
+			  }
+			);
+		})
+		
+		function onShirtCounterAdd() {
+			localStorage.shirtCount = Number(localStorage.shirtCount)+1;
+			document.getElementById("shirtCounter").innerHTML = localStorage.shirtCount;
+			priceUpdate();
+		}
+		function onShirtCounterMinus() {
+			var shirtCount = Number(localStorage.shirtCount);
+			if(shirtCount > 1){
+				shirtCount = shirtCount-1;
+				localStorage.shirtCount = shirtCount;
+				document.getElementById("shirtCounter").innerHTML = localStorage.shirtCount;
+				priceUpdate();
+			}
+		}
+
+		function onShoeCounterAdd() {
+			localStorage.shoeCount = Number(localStorage.shoeCount)+1;
+			document.getElementById("shoeCounter").innerHTML = localStorage.shoeCount;
+			priceUpdate();
+
+		}
+		function onShoeCounterMinus() {
+			var shoeCount = Number(localStorage.shoeCount);
+			if(shoeCount > 1){
+				shoeCount = shoeCount-1;
+				localStorage.shoeCount = shoeCount;
+				document.getElementById("shoeCounter").innerHTML = localStorage.shoeCount;
+				priceUpdate();
+			}	
+		}
+		
+	</script>
+</body>
+</html>
